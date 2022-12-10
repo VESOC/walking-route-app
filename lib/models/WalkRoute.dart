@@ -20,16 +20,16 @@ class WalkRoute {
 }
 
 class WayPoint {
-  final String routeName, routeDescription;
-  final List<List<double>> routeCoordinates;
-  final List<String> routeImages;
+  final String pointName, pointDescription;
+  final Coord pointCoordinates;
+  final String pointImage;
   final int likes;
 
   WayPoint({
-    required this.routeName,
-    required this.routeDescription,
-    required this.routeCoordinates,
-    required this.routeImages,
+    required this.pointName,
+    required this.pointDescription,
+    required this.pointCoordinates,
+    required this.pointImage,
     this.likes = 0,
   });
 }

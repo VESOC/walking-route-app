@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:io';
+import 'package:webview_flutter/webview_flutter.dart';
 
 import '../../../../size_config.dart';
 import 'search_field.dart';
@@ -19,21 +21,10 @@ class Body extends StatelessWidget {
             SizedBox(height: getProportionateScreenHeight(20)),
             SearchField(),
             SizedBox(height: getProportionateScreenHeight(10)),
-            Flexible(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.teal,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(20)),
-                child: const Center(
-                  child: Text(
-                    'Map',
-                    style: TextStyle(color: Colors.white, fontSize: 30.0),
-                  ),
-                ),
-              ),
+            WebView(
+              initialUrl:
+                  'https://vesoc.github.io/walking-route-page/index.html',
+              gestureNavigationEnabled: true,
             ),
           ],
         ),
