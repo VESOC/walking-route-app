@@ -14,9 +14,7 @@ class Body extends StatelessWidget {
       padding:
           EdgeInsets.symmetric(horizontal: getProportionateScreenHeight(20)),
       child: SafeArea(
-        child: Column(
-          children: [RouteForm()],
-        ),
+        child: RouteForm(),
       ),
     );
   }

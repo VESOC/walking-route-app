@@ -21,10 +21,14 @@ class Body extends StatelessWidget {
             SizedBox(height: getProportionateScreenHeight(20)),
             SearchField(),
             SizedBox(height: getProportionateScreenHeight(10)),
-            WebView(
-              initialUrl:
-                  'https://vesoc.github.io/walking-route-page/index.html',
-              gestureNavigationEnabled: true,
+            SizedBox(
+              width: double.infinity,
+              height: double.infinity,
+              child: const WebView(
+                initialUrl:
+                    'https://vesoc.github.io/walking-route-page/index.html',
+                gestureNavigationEnabled: true,
+              ),
             ),
           ],
         ),

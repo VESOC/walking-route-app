@@ -144,6 +144,7 @@ class _RouteFormState extends State<RouteForm> {
     return ElevatedButton(
       onPressed: () async {
         var isValidated = formKey.currentState?.validate();
+        print(isValidated);
         if (isValidated == true) {
           var imgRes = onUploadImage();
           var data = {
@@ -156,6 +157,7 @@ class _RouteFormState extends State<RouteForm> {
               Uri.parse(
                   'https://walkrouteapi.deta.dev/upload/tester/create/${routeName.replaceAll(' ', '-')}'),
               body: data);
+          print(request);
           Navigator.pushNamed(context, HomeScreen.routeName);
         }
       },
