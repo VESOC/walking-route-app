@@ -26,11 +26,10 @@ class CustomAppBar extends StatelessWidget {
               width: getProportionateScreenWidth(40),
               child: TextButton(
                 style: TextButton.styleFrom(
-                  foregroundColor: kPrimaryColor,
+                  backgroundColor: kPrimaryColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(60),
                   ),
-                  backgroundColor: Colors.white,
                   padding: EdgeInsets.zero,
                 ),
                 onPressed: () => Navigator.pop(context),

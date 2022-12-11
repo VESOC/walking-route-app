@@ -11,8 +11,7 @@ class SearchScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Body(),
-      bottomNavigationBar:
-          CustomBottomNavBar(selectedMenu: MenuState.favourite),
+      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.search),
     );
   }
 }
