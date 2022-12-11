@@ -15,8 +15,7 @@ class SearchResultScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Body(),
-      bottomNavigationBar:
-          CustomBottomNavBar(selectedMenu: MenuState.favourite),
+      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.search),
     );
   }
 }

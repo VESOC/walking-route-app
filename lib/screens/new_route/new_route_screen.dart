@@ -14,8 +14,7 @@ class NewRouteScreen extends StatelessWidget {
         title: Text('New Route'),
       ),
       body: Body(),
-      bottomNavigationBar:
-          CustomBottomNavBar(selectedMenu: MenuState.favourite),
+      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.search),
     );
   }
 }

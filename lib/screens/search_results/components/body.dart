@@ -27,7 +27,8 @@ class Body extends StatelessWidget {
 }
 
 Widget searchResultView() {
-  final List<WalkRoute> routes; // TODO: get search results
+  return searchResultView();
+  /*final List<WalkRoute> routes; // TODO: get search results
   return Expanded(
     child: ListView.builder(
       scrollDirection: Axis.vertical,
@@ -37,5 +38,5 @@ Widget searchResultView() {
         return SearchItem(route: routes[index]);
       },
     ),
-  );
+  );*/
 }

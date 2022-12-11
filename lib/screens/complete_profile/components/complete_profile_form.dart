@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:walking_route/components/custom_surfix_icon.dart';
 import 'package:walking_route/components/default_button.dart';
 import 'package:walking_route/components/form_error.dart';
-import 'package:walking_route/screens/otp/otp_screen.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -37,9 +36,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           DefaultButton(
             text: "설정 저장",
             press: () {
-              if (_formKey.currentState!.validate()) {
-                Navigator.pushNamed(context, OtpScreen.routeName);
-              }
+              if (_formKey.currentState!.validate()) {}
             },
           ),
         ],
@@ -50,7 +47,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   TextField buildNickNameFormField() {
     return const TextField(
       decoration: InputDecoration(
-          contentPadding: const EdgeInsets.only(bottom: 3),
+          contentPadding: const EdgeInsets.only(left: 20.0),
           labelText: "닉네임",
           floatingLabelBehavior: FloatingLabelBehavior.always,
           hintText: " 닉네임을 입력해주세요.",
