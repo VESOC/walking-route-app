@@ -27,16 +27,16 @@ class Body extends StatelessWidget {
 }
 
 Widget searchResultView() {
-  return searchResultView();
-  /*final List<WalkRoute> routes; // TODO: get search results
+  final List<WalkRoute> routes; // TODO: get search results
   return Expanded(
     child: ListView.builder(
       scrollDirection: Axis.vertical,
       padding: const EdgeInsets.all(8.0),
-      itemCount: routes.length,
+      itemCount: 0,
       itemBuilder: (BuildContext context, int index) {
-        return SearchItem(route: routes[index]);
+        // return SearchItem(route: routes[index]);
+        return Text('');
       },
     ),
-  );*/
+  );
 }
